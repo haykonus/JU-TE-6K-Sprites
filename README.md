@@ -103,7 +103,7 @@ BREM 255,255,255,255,255,0,0,0,0,0,0,255,255,255,255,255
 ```
 ## Full Color Sprite Library (FCSL)
 
-Es können max. 8 Sprites definiert werden. Die Speicherwaltung erfolgt automatisch. Es muss lediglich in der Variablen Z die Nummer (Slot) des Sprites zur Adressierung in allen Funktionen angegeben werden. Ein Sprite belegt 3 KByte RAM, da alle 8 möglichen Bit-Positionen eines Sprites für alle 4 Farb-Bänke mit INIT_SPRITE vorher berechnet und im Slot gespeichert werden. Der Hintergrund-Puffer sowie die SET- und CLR-Tabellen Platz benötigen ebenfalls Platz.
+Es können max. 8 Sprites definiert werden. Die Speicherwaltung erfolgt automatisch. Es muss lediglich in der Variablen Z die Nummer (Slot) des Sprites zur Adressierung in allen Funktionen angegeben werden. Ein Sprite belegt 3 KByte RAM, da alle 8 möglichen Bit-Positionen eines Sprites für alle 4 Farb-Bänke mit INIT_SPRITE vorher berechnet und im Slot gespeichert werden. Der Hintergrund-Puffer sowie die SET- und CLR-Tabellen benötigen ebenfalls Platz.
 
 ```
 INIT_SPRITE	-> Intialisiert Sprite in Slot N(t) und stellt ihn dar.
