@@ -3,7 +3,7 @@
 
 ![Testbild](/Bilder/Sprite-Demo-A2.png)
 
-Die hier beschriebene Sprite-Bibliothek für den JuTe-6K-Computer (ES4.0) (s. [Quellen](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/README.md#quellen)) stellt Funktionen für Sprites mit 16x16 Pixeln und 16 Farben pro Pixel zur Verfügung. Sie ist vollständig in Zilog Z8-Assembler realisiert. Zum Assemblieren wurde der [Arnold-Assembler](http://john.ccac.rwth-aachen.de:8000/as/) unter Windows 11 verwendet.
+Die hier beschriebene Sprite-Bibliothek für den JuTe-6K-Computer (ES4.0) (s. [Quellen](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/README.md#quellen)) stellt Funktionen für Soft-Sprites (Shapes)mit 16x16 Pixeln und 16 Farben pro Pixel zur Verfügung. Sie ist vollständig in Zilog Z8-Assembler realisiert. Zum Assemblieren wurde der [Arnold-Assembler](http://john.ccac.rwth-aachen.de:8000/as/) unter Windows 11 verwendet.
   
 ## Vorausetzungen
 
