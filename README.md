@@ -3,11 +3,11 @@
 
 ![Testbild](/Bilder/Sprite-Demo-A2.png)
 
-Die hier beschriebene Sprite-Bibliothek für den JuTe-6K-Computer (ES4.0) (s. [Quellen](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/README.md#quellen)) stellt Funktionen für Soft-Sprites (Shapes) mit 16x16 Pixeln und 16 Farben pro Pixel zur Verfügung. Sie ist vollständig in Zilog Z8-Assembler realisiert. Zum Assemblieren wurde der [Arnold-Assembler](http://john.ccac.rwth-aachen.de:8000/as/) unter Windows 11 verwendet.
+Die hier beschriebene Sprite-Bibliothek für den JuTe-6K-Computer (ES4.0) (s. [Quellen](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/README.md#quellen)) stellt Funktionen für Software-Sprites (Shapes) mit 16x16 Pixeln und 16 Farben pro Pixel zur Verfügung. Sie ist vollständig in Zilog Z8-Assembler realisiert. Zum Assemblieren wurde der [Arnold-Assembler](http://john.ccac.rwth-aachen.de:8000/as/) unter Windows 11 verwendet.
   
 ## Vorausetzungen
 
-- JuTe 6K (JuTe-2K + Grafikerweiterung oder JuTe-6K-Compact)
+- JuTe 6K (JuTe-2K/4K + Grafikerweiterung oder JuTe-6K-Compact)
 - min. 32KB RAM
 
 Der Video-RAM sollte möglichst schnell sein. Die Binaries der Sprite-Bibliothek (s. [FCSL](https://github.com/haykonus/JU-TE-6K-Sprites/tree/main/FCSL)) sind für schnellen Zugriff auf den Video-RAM erstellt worden (External Memory Timing = normal). Das Timing kann im Quellcode mit `VRAM_TIMING = SLOW|FAST` angepasst werden.
@@ -28,9 +28,16 @@ Im [JTCEMU](http://www.jens-mueller.org/jtcemu/index.html) laufen die Programme 
 - im Monitor mit `J8000` starten 
 
 ### TINY-MP-Basic
-
+#### Ohne Basic-Erweiterung
+Ein Beispiel, auch mit "tanzenden Smiley's", aber ohne Hintergrundbild und mit weniger Animationen, als in der Assembler-Version.
 - [FCSL_8300H.bin](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/FCSL/FCSL_8300H.bin) auf Adresse 8300H laden
 - [FCSL-Demo_8300H.bas](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/Demos/FCSL-Demo_8300H.bas) laden (auf E000H) und starten
+
+#### Mit Basic-Erweiterung
+Dieses Beispiel entspricht exakt der Assembler-Version, das Steuer-Programm ist jedoch vollständig in TINY-MP-Basic geschrieben. Die [Basic-Erweiterung](https://hc-ddr.hucki.net/wiki/doku.php/tiny/software/baserw40) (von V. Pohlers) wird ebenfalls genutzt. Die zusätzlichen Befehle "RESTORE und "READ" sind sehr nützlich für das Lesen der Steuerdaten der Animationen. Die Sprite-Definitionen werden weiterhin mit der Pseudo-Anweisung "BREM" im [JTCEMU](http://www.jens-mueller.org/jtcemu/index.html)-Format abgelegt, die seit der [JTCEMU](http://www.jens-mueller.org/jtcemu/index.html)-Version 2.1 zur Verfügung steht.
+
+- [FCSL+baserw40_8000H.bin](https://github.com/haykonus/JU-TE-6K-Sprites-Dev/blob/main/FCSL/FCSL+baserw40_8000H.bin) auf Adresse 8000H laden
+- [FCSL+baserw40-Demo_8000H.bas](https://github.com/haykonus/JU-TE-6K-Sprites-Dev/blob/main/Demos/FCSL+baserw40-Demo_8000H.bas) laden (auf E000H) und starten
 
 <br>
 
@@ -41,7 +48,7 @@ Im [JTCEMU](http://www.jens-mueller.org/jtcemu/index.html) laufen die Programme 
 
 ```
 2 BREM 255,255,255,255,255,0,0,0,0,0,0,255,255,255,255,255
-BREM 255,255,255,0,0,11,11,11,11,11,11,0,0,255,255,255
+BREM255,255,255,0,0,11,11,11,11,11,11,0,0,255,255,255
 BREM 255,255,0,11,11,11,11,11,11,11,11,11,11,0,255,255
 BREM 255,0,11,11,11,11,0,0,11,0,0,11,11,11,0,255
 BREM 255,0,11,11,11,0,11,11,0,11,11,0,11,11,0,255
@@ -183,7 +190,7 @@ Z = Slot (0-7)
 
 ### MOVE_SPRITE
 ```
-Stellt einen Sprite an einer neuen Position zum Zeitpunkt (t) dar, und löscht 
+Stellt einen Sprite an einer neuen Position zum Zeitpunkt (t) dar und löscht 
 ihn an der Postion zum Zeitpunkt (t-1). Der Hintergrund zum Zeitpunkt (t) wird
 gerettet, der Hintergrund vom Zeitpunkt (t-1) wird wieder hergestellt.
 
