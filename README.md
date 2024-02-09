@@ -330,7 +330,7 @@ SpriteSpeccyBlock,0,2,2
 
 ## Quellen
 
-Dieses Projekt nutzt Infos und Software aus folgende Quellen:
+Dieses Projekt nutzt Infos und Software aus folgenden Quellen:
 
 https://hc-ddr.hucki.net/wiki/doku.php/tiny/es40
 
