@@ -36,8 +36,8 @@ Ein Beispiel, auch mit "tanzenden Smiley's", aber ohne Hintergrundbild und mit w
 #### Mit Basic-Erweiterung
 Dieses Beispiel entspricht exakt der Assembler-Version, das Steuer-Programm ist jedoch vollständig in TINY-MP-Basic geschrieben. Die [Basic-Erweiterung](https://hc-ddr.hucki.net/wiki/doku.php/tiny/software/baserw40) (von V. Pohlers) wird ebenfalls genutzt. Die zusätzlichen Befehle "RESTORE und "READ" sind sehr nützlich für das Lesen der Steuerdaten der Animationen. Die Sprite-Definitionen werden weiterhin mit der Pseudo-Anweisung "BREM" im [JTCEMU](http://www.jens-mueller.org/jtcemu/index.html)-Format abgelegt, die seit der [JTCEMU](http://www.jens-mueller.org/jtcemu/index.html)-Version 2.1 zur Verfügung steht.
 
-- [FCSL+baserw40_8000H.bin](https://github.com/haykonus/JU-TE-6K-Sprites-Dev/blob/main/FCSL/FCSL+baserw40_8000H.bin) auf Adresse 8000H laden
-- [FCSL+baserw40-Demo_8000H.bas](https://github.com/haykonus/JU-TE-6K-Sprites-Dev/blob/main/Demos/FCSL+baserw40-Demo_8000H.bas) laden (auf E000H) und starten
+- [FCSL+baserw40_8000H.bin](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/FCSL/FCSL+baserw40_8000H.bin) auf Adresse 8000H laden
+- [FCSL+baserw40-Demo_8000H.bas](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/Demos/FCSL+baserw40-Demo_8000H.bas) laden (auf E000H) und starten
 
 <br>
 
