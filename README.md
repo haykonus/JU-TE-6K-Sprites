@@ -248,6 +248,11 @@ Das Ergebnis ist:
 
 </br>
 
+> [!NOTE]
+> Die folgende Beschreibung der Kodierung einen Pixels wird intern in der FCSL verwendet. Sie entspricht nicht der Abbildung in der Hardware des "JuTe 6K".
+
+</br>
+
 Jedes Byte enthält die Farb-Codierung oder die Maske eines Pixels des Sprites:
 
 ```
