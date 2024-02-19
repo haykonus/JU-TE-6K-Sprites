@@ -349,6 +349,8 @@ https://www.tiny-computer.de/
 
 https://eb-harwardt.jimdofree.com/8-bit-technik/tiny-computer-6kb-aus-ju-te/
 
+https://github.com/seidat1/Tiny
+
 http://www.jens-mueller.org/jtcemu/index.html
 
 https://www.robotrontechnik.de/html/forum/thwb/
