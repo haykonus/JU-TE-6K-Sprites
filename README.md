@@ -6,7 +6,7 @@
 
 Die hier beschriebene Sprite-Bibliothek für den JuTe-6K-Computer (ES4.0) (s. [Quellen](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/README.md#quellen)) stellt Funktionen für Software-Sprites (Shapes) mit 16x16 Pixeln und 16 Farben pro Pixel zur Verfügung. Sie ist vollständig in Zilog Z8-Assembler realisiert. Zum Assemblieren wurde der [Arnold-Assembler](http://john.ccac.rwth-aachen.de:8000/as/) unter Windows 11 verwendet.
   
-## Vorausetzungen
+## Voraussetzungen
 
 - JuTe 6K (JuTe-2K/4K + Grafikerweiterung oder JuTe-6K-Compact)
 - min. 32KB RAM
