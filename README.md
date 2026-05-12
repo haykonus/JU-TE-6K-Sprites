@@ -1,8 +1,12 @@
 [Deutsch](https://github.com/haykonus/JU-TE-6K-Sprites) | [English](https://github-com.translate.goog/haykonus/JU-TE-6K-Sprites?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=wapp)
 # JU-TE-6K-Sprites
-### [>> Demo Video ansehen <<](https://nextcloud-ext.peppermint.de/s/AZwtTL8gKgPew44)
+
 
 ![Testbild](/Bilder/Sprites-Demo-600.gif)
+
+[Video, gefilmt am TFT-Monitor](https://nextcloud-ext.peppermint.de/s/AZwtTL8gKgPew44)
+
+<br>
 
 Die hier beschriebene Sprite-Bibliothek für den JuTe-6K-Computer (ES4.0) (s. [Quellen](https://github.com/haykonus/JU-TE-6K-Sprites/blob/main/README.md#quellen)) stellt Funktionen für Software-Sprites (Shapes) mit 16x16 Pixeln und 16 Farben pro Pixel zur Verfügung. Sie ist vollständig in Zilog Z8-Assembler realisiert. Zum Assemblieren wurde der [Arnold-Assembler](http://john.ccac.rwth-aachen.de:8000/as/) unter Windows 11 verwendet.
   
