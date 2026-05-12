@@ -1,4 +1,4 @@
-[English version](https://github-com.translate.goog/haykonus/JU-TE-6K-Sprites?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=wapp)
+[Deutsch](https://github.com/haykonus/JU-TE-6K-Sprites) | [English](https://github-com.translate.goog/haykonus/JU-TE-6K-Sprites?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=de&_x_tr_pto=wapp)
 # JU-TE-6K-Sprites
 ### [>> Demo Video ansehen <<](https://nextcloud-ext.peppermint.de/s/AZwtTL8gKgPew44)
 
